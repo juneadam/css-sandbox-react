@@ -1,0 +1,42 @@
+.frendWrapper {
+    width: 32px;
+    height: 32px;
+    -moz-transform: scale(-3, 3);
+    -webkit-transform: scale(-3, 3);
+    -o-transform: scale(-3, 3);
+    -ms-transform: scale(-3, 3);
+    transform: scale(-3, 3);
+    top: -50%;
+    right: -30%;
+}
+
+.frend {
+    height: 32px;
+    width: 192px;
+    background-image: url("/birds.32x32trans.png");
+    animation-name: flap;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes flap {
+    0%, 19.9%{
+        transform: translateX(0px);
+    }
+    20%, 49.9%{
+        transform: translateX(-32px);
+    }
+    50%, 69.9%{
+        transform: translateX(-64px);
+    }
+    70%, 84.9%{
+        transform: translateX(-96px);
+    }
+    85%, 99.9%{
+        transform: translateX(-128px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

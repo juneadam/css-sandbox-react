@@ -1,0 +1,39 @@
+.mars {
+  height: 100vh;
+  width: 5120px;
+  animation: horizontalScroll infinite linear;
+}
+
+.mountain {
+  background-image: url(/marsmountain.png);
+  background-repeat: repeat-x;
+  animation-duration: 4000ms;
+}
+
+.far {
+  background-image: url(/marsfar.png);
+  background-repeat: repeat-x;
+  animation-duration: 2400ms;
+}
+
+.mid {
+  background-image: url(/marsmid.png);
+  background-repeat: repeat-x;
+  animation-duration: 1800ms;
+}
+
+.close {
+  background-image: url(/marsclose.png);
+  animation-duration: 800ms;
+  background-repeat: repeat-x;
+  background-position-y: 210px;
+}
+
+@keyframes horizontalScroll {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-1280px);
+  }
+}
